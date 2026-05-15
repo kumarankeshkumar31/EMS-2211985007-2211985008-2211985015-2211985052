@@ -1,0 +1,50 @@
+h1{
+  animation: changeColor 3s linear infinite;
+  font-size: 40px !important;
+  color: white;
+}
+@keyframes changeColor {
+  0%{
+    color: rgb(243, 215, 215);
+  }
+  50%{
+    color:gold;
+  }
+  100%{
+    color: rgb(192, 162, 142);
+  }
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-200vh) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.animate-bubble {
+  animation: bubble ease-in infinite;
+}
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-30px) translateX(10px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+.animate-float {
+  animation: float infinite ease-in-out;
+}
